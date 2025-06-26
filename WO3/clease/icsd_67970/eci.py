@@ -42,7 +42,10 @@ alphas = evl.alpha_CV()
 alpha = alphas[0][np.argmin(alphas[1])]
 evl.set_fitting_scheme(fitting_scheme='l2', alpha=alpha)
 evl.fit()
+# Save ECIs to a json file
+evl.save_eci(fname="eci.json")
 
 # Plot E_pred vs E_dft(mlip)
 fig = pp.plot_fit(evl, interactive=True)
 plt.show()
+
