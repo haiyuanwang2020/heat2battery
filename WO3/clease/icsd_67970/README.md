@@ -13,3 +13,7 @@ The ICSD 67970 is used here as a starting point with a stoichiometry of WO3H6. T
 3. Fit the energies vs the correlation functions to obtain the ECIs.
 
 `./eci.py`
+
+4. Perform semi-grand canonical MC simulations using the ECIs.
+
+`./mc.py`
